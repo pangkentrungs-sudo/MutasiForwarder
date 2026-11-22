@@ -1,9 +1,16 @@
 pluginManagement {
-    repositories { google(); mavenCentral(); gradlePluginPortal() }
+    repositories {
+        maven { url 'https://googleapis.com' }
+        google()
+        gradlePluginPortal()
+    }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories { google(); mavenCentral() }
+    repositories {
+        maven { url 'https://googleapis.com' }
+        google()
+    }
 }
 rootProject.name = "MutasiForwarder"
 include ':app'
